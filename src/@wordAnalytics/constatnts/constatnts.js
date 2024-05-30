@@ -4,11 +4,11 @@ export const CHARACTERS_LIMIT = Object.freeze({
 });
 
 export const SOCIAL_NETWORK = Object.freeze({
-  FACEBOOK: "Facebook",
-  INSTAGRAM: "Instagram",
+  FACEBOOK: 'Facebook',
+  INSTAGRAM: 'Instagram',
 });
 
 export const TEXT_ANALYSIS_MODES = Object.freeze({
-  WORDS: "Words",
-  CHARACTERS: "Characters",
+  WORDS: 'Words',
+  CHARACTERS: 'Characters',
 });
