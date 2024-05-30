@@ -1,7 +1,5 @@
 # WordAnalytics
 
-![WordAnalytics Logo](path-to-your-logo-image.png) <!-- Replace with the actual path to your logo image -->
-
 WordAnalytics is a web-based text analysis tool designed to help users count words and characters in their text, and compare these counts against social media platform limits. The application provides a simple and intuitive interface to quickly analyze text for platforms like Instagram and Facebook.
 
 ## Features
