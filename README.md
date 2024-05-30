@@ -23,10 +23,25 @@ To run the project locally, follow these steps:
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/yourusername/wordanalytics.git
-   cd wordanalytics
+
+2. **Navigate to propper folder**: 
+    ```basg
+    cd wordanalytics
 2. **Install Dependencies**:
     ```bash
    npm install
 3. **Start the Development Server**:
     ```bash
    npm run dev
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and create a pull request with your changes. Ensure your code follows the existing style and passes all tests.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any questions or feedback, feel free to reach out via [GitHub Issues](https://github.com/stanjke/wordanalytics/issues).
