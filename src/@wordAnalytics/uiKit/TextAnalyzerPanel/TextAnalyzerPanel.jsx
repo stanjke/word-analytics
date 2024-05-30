@@ -4,7 +4,7 @@ import TextArea from '../TextArea/TextArea';
 import './TextAnalyzerPanel.css';
 import useDebounce from '../../services/hooks/useDebounce';
 
-function TextAnalyzerPanel() {
+function TextAnalyzerPanel({ setLastEditedDate }) {
   const [text, setText] = useState('');
   const debounced = useDebounce(text);
 
@@ -13,6 +13,7 @@ function TextAnalyzerPanel() {
       <TextArea
         text={text}
         setText={setText}
+        setLastEditedDate={setLastEditedDate}
       />
       <Stats text={debounced} />
     </main>

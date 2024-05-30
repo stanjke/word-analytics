@@ -1,10 +1,11 @@
+import { calculateLastActivity } from '../../services/helpers/calculateLastActivity';
 import './Footer.css';
 
-function Footer() {
+function Footer({ lastEditedDate }) {
   return (
     <footer className="footer">
       <small>&copy; Copyright by stanjke. All rights reserved.</small>
-      <small>Last checked limits: 17 days ago</small>
+      <small>Last checked limits: {calculateLastActivity(lastEditedDate)}</small>
     </footer>
   );
 }

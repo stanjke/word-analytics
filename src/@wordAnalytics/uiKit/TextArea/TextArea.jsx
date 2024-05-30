@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './TextArea.css';
 import Warning from '../Warning/Warning';
 
-export default function TextArea({ text, setText }) {
+export default function TextArea({ text, setText, setLastEditedDate }) {
   const [warningMessage, setWarningMessage] = useState('');
 
   const handleChange = (e) => {
@@ -14,6 +14,8 @@ export default function TextArea({ text, setText }) {
       setWarningMessage('');
     }
     setText(newText);
+    setLastEditedDate(Date.now());
+    localStorage.setItem('lastEditDate', Date.now());
   };
 
   return (
