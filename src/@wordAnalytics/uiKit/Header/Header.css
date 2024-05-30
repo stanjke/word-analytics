@@ -1,0 +1,18 @@
+.first-heading {
+  font-size: 65px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.92);
+  margin-top: 75px;
+  text-align: center;
+}
+
+.first-heading--thin {
+  font-weight: 300;
+}
+
+@media (max-width: 1150px) {
+  .first-heading {
+    font-size: 7vw;
+  }
+}

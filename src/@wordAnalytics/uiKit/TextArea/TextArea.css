@@ -1,0 +1,17 @@
+.textarea {
+  resize: none;
+  flex: 2;
+  font: inherit;
+  padding: 30px 40px;
+  font-size: 22px;
+}
+
+.textarea::placeholder {
+  font-weight: 500;
+  color: #959c9f;
+}
+
+.textarea > textarea {
+  height: 100%;
+  width: 100%;
+}

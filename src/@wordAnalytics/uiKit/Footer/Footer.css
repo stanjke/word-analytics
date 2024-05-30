@@ -1,0 +1,15 @@
+.footer {
+  width: 1050px;
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.4;
+}
+
+@media (max-width: 1150px) {
+  .footer {
+    width: initial;
+    flex-direction: column;
+    align-items: center;
+  }
+}
