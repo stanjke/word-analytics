@@ -44,4 +44,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-For any questions or feedback, feel free to reach out via [GitHub Issues](https://github.com/stanjke/wordanalytics/issues).
+For any questions or feedback, feel free to reach out via [GitHub Issues](https://github.com/stanjke/word-analytics/issues).
