@@ -1,17 +1,32 @@
-import { useState } from 'react'
-import './TextArea.css'
+import { useState } from 'react';
+import './TextArea.css';
+import Warning from '../Warning/Warning';
 
-export default function TextArea() {
+export default function TextArea({ text, setText }) {
+  const [warningMessage, setWarningMessage] = useState('');
 
-    const [text, setText] = useState('');
-
-    const handleChange = (e) => {
-        const newText = e.target.value;
-        setText(newText)
-        // console.log('change text area value!: ', e.target.value)
+  const handleChange = (e) => {
+    let newText = e.target.value;
+    if (newText.includes('<script>')) {
+      setWarningMessage('<script> is not allowed');
+      newText = newText.replace('<script>', '');
+    } else {
+      setWarningMessage('');
     }
+    setText(newText);
+  };
 
-    return (
-        <textarea className="textarea" value={text} onChange={handleChange} placeholder='Enter your text here...' spellCheck='false'>TextArea</textarea>
-    )
+  return (
+    <div className="textarea">
+      <textarea
+        wrap="soft"
+        className=""
+        value={text}
+        onChange={handleChange}
+        placeholder="Enter your text here..."
+        spellCheck="false"
+      />
+      {warningMessage ? <Warning warningMessage={warningMessage} /> : null}
+    </div>
+  );
 }

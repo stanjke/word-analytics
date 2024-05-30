@@ -1,9 +1,7 @@
-import './BackgroundImage.css'
+import './BackgroundImage.css';
 
 function BackgroundImage() {
-    return (
-        <div className='background-image' />
-    )
+  return <div className="background-image" />;
 }
 
-export default BackgroundImage
+export default BackgroundImage;
